@@ -1,0 +1,38 @@
+/* chapter1 linklist
+  此章主要为链表相关实现
+  
+
+
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct LNode
+{
+    int data;
+    struct LNode *next;
+}LNode;
+
+void list_init()
+{
+    int n = 8;
+    int i;
+    for(i = 0; i <  n; i++)
+    {
+        LNode *s = (LNode *)malloc(sizeof(LNode));
+        s->data = i;
+        printf("%d\n",s->data);
+    }
+    
+}
+
+int main(void)
+{
+
+ 
+    list_init();
+    
+	printf("\nHello,C world!");
+	return EXIT_SUCCESS;
+}
